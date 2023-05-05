@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Cinema Sol</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="text/javascript" src="login.js"> </script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+<script src="nav.js"></script>
+<meta charset="utf-8">
+  
+</head>
+<body>
+  <div id="wrapper">
+  
+  <div id="nav">
+  </div> <!-- end of nav -->
+    
+  <div id="top">
+
+    <img  src="images/cinemaLogo.png" alt="Large Cinema Logo" class="center" alt="Cinema Logo">
+________________
+<h2>LOGIN</h2>
+</div><!-- end of top -->
+<div id="content"> 
+<div>
+  
+  <!-- HTML Code: Place this code in the document's body (between the 'body' tags) where the table should appear -->
+<!-- CSS Code: Place this code in the document's head (between the 'head' tags) -->
+<style>
+  table.GeneratedTable {
+    width: 100%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: #ffcc00;
+    border-style: solid;
+    color: #000000;
+  }
+  
+  table.GeneratedTable td, table.GeneratedTable th {
+    border-width: 2px;
+    border-color: #adadad;
+    border-style: solid;
+    padding: 3px;
+  }
+  
+  table.GeneratedTable thead {
+    background-color: #ffcc00;
+  }
+  </style>
+  
+  <div class="container" id="container">
+<!-- REGISTER -->
+    <div class="form-container register-container">
+      <form action="#">
+        <h1>Register here</h1>
+        <p id ="registerEmail" class="red"></p>
+        <input type="email" placeholder="Email" id="email"><br>
+        <p id ="registerPassword" class="red"></p>
+        <input type="password" placeholder="Password" id="regPass"><br>
+        <input type="password" placeholder="Repeat password" id="repeatPass"><br>
+        <button id="registerBtn">Register</button>
+        <span>or use your account</span>
+        <div class="social-container">
+          <a href="#" class="social"><i class="fa fa-facebook-square fa-2x"></i></a>
+          <a href="#" class="social"><i class="fa fa-twitter-square fa-2x"></i></a>
+          <a href="#" class="social"><i class="fa fa-instagram fa-2x"></i></a>
+        </div>
+      </form>
+    </div>
+<!-- LOGIN -->
+    <div class="form-container login-container">
+      <form action="#">
+        <h1>Login here</h1>
+        <input type="email" placeholder="Email" id="user"><br>
+        <input type="password" placeholder="Password" id="pass">
+        <div class="content">
+          <div class="checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label>Remember me</label>
+          </div>
+          <div class="pass-link">
+            <a href="#">Forgot password?</a>
+          </div>
+        </div>
+        <button id="loginBtn">Login</button>
+        <span>or use your account</span>
+        <div class="social-container">
+          <a href="#" class="social"><i class="fa fa-facebook-square fa-2x"></i></a>
+          <a href="#" class="social"><i class="fa fa-twitter-square fa-2x"></i></a>
+          <a href="#" class="social"><i class="fa fa-instagram fa-2x"></i></a>
+        </div>
+      </form>
+    </div>
+<!-- OVERLAYS -->
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1 class="title">Hello</h1>
+          <p>If you have an account to Cinema Sol please log in here</p>
+          <button class="ghost" id="login">Login
+            <i class="lni lni-arrow-left login"></i>
+          </button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1 class="title">Start your <br> journey here</h1>
+          <p>If you don't have an account yet, join us and start your Cinema viewing journey.</p>
+          <button class="ghost" id="register">Register
+            <i class="lni lni-arrow-right register"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div id="invalid">
+
+  </div>
+</div>
+</div> 
+
+<!-- end of content -->
+<div id="footer" style="text-align: center;">
+  | <a href="aboutus.html">About Us</a> | <a href="contactus.html">Contact Us</a> | <a href="privacypolicy.html">Privacy Policy</a>  | <a href="events.html">Events</a>  | 
+    <br>
+  © 2023 Cinema Sol. <br> 
+  All rights reserved.<br> 
+  <p style="text-align: center;">All images are property of their respective franchises and movies. </p> 
+
+<div id="sociallinks">
+<!-- Add font awesome icons -->
+<a href="http://www.facebook.com" class="fa fa-facebook-square fa-2x" style="color:#284d4c"></a>
+<a href="http://www.twitter.com" class="fa fa-twitter-square fa-2x" style="color:#284d4c"></a>
+<a href="http://www.instagram.com" class="fa fa-instagram fa-2x" style="color:#284d4c"></a>
+</div>
+
+</div><!-- end of footer -->
+</div><!--end of wrapper-->
+</body>
+</html>

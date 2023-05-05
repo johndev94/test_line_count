@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Cinema Sol</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+<script type="text/javascript" src="editScreenings.js"></script>
+<script src="nav.js"></script>
+<meta charset="utf-8">
+  
+</head>
+<body>
+  <div id="wrapper">
+  
+    <div class="navAdmin" id="nav">
+  </div> <!-- end of nav -->
+    
+  <div id="top">
+
+    <img  src="images/cinemaLogo.png" alt="Large Cinema Logo" class="center" alt="Cinema Logo">
+________________
+<h2>EDIT SCREENINGS</h2>
+</div><!-- end of top -->
+<div id="content"> 
+    <h4><u>Add Screenings</u></h4>
+  <div id='addScreening'>
+    <table>
+        <form id="add-form">            
+            <tr>
+                <td><label for="date" style="text-align: center;">Date:</label></td>
+                <td><input type="text" id="date" placeholder="11/11/2023"></td>
+            </tr>
+            <tr>
+                <td><label for="time">Time:</label></td>
+                <td><input type="text" id="time" placeholder="12:45"></td>
+            </tr>
+            <tr>
+                <td><label for="capacity">Capacity:</label></td>
+                <td><input type="text" id="capacity" placeholder="50"></td>
+            </tr>
+            <tr>
+                <td><label for="costPerSeat">Cost Per Seat:</label></td>
+                <td><input type="text" id="costPerSeat" placeholder="12"></td>
+            </tr>
+            <tr>
+                <td><label for="screenNo">Screen No:</label></td>
+                <td><input type="text" id="screenNo" placeholder="1"></td>
+            </tr>
+            <tr>
+                <td>Film ID:</td>
+                <td><select id="films" style="width: 100px;">
+                    <option value="0">Select...</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="seatsBooked">Seats Booked:</label></td>
+                <td><input type="text" id="seatsBooked" placeholder="10"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td align="right"><input type="button" class="btn btn-success" value="Add" id="addBtn"></td>
+            </tr>
+        </form>
+    </table>
+</br>
+    
+</div>
+<h4><u>Update and Delete</u></h4>
+<div id="edit">
+    <table id="table" border="1">
+        <thead id="thead">
+            <tr>
+                <th>Screening No</th>
+                <th class="textCenter">Date</th>
+                <th class="textCenter">Time</th>
+                <th class="textCenter">Capacity</th>
+                <th class="textCenter">Screen No</th>
+                <th class="textCenter">Cost Per Seat</th>
+                <th class="textCenter">Film ID</th>
+                <th class="textCenter">Seats Booked</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+</div>
+</div> <!-- end of content -->
+<div id="footer" style="text-align: center;">
+    | <a href="aboutus.html">About Us</a> | <a href="contactus.html">Contact Us</a> | <a href="privacypolicy.html">Privacy Policy</a>  | <a href="events.html">Events</a>  | 
+      <br>
+    © 2023 Cinema Sol. <br> 
+    All rights reserved.<br> 
+    <p style="text-align: center;">All images are property of their respective franchises and movies. </p> 
+  
+  <div id="sociallinks">
+  <!-- Add font awesome icons -->
+  <a href="http://www.facebook.com" class="fa fa-facebook-square fa-2x" style="color:#284d4c"></a>
+  <a href="http://www.twitter.com" class="fa fa-twitter-square fa-2x" style="color:#284d4c"></a>
+  <a href="http://www.instagram.com" class="fa fa-instagram fa-2x" style="color:#284d4c"></a>
+  </div>
+  
+  </div><!-- end of footer -->
+  </div><!--end of wrapper-->
+  </body>
+  </html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Cinema Sol</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="editReview.js"> </script>
+<script src="nav.js"></script>
+<meta charset="utf-8">
+
+
+
+</head>
+<body>
+<div id="wrapper">
+  
+<div id="nav">
+</div> <!-- end of nav -->
+
+<div id="top">
+
+<img  src="images/cinemaLogo.png" alt="Large Cinema Logo" class="center" alt="Cinema Logo">
+________________
+
+<h2>Leave a review for <p id="movieName"></p></h2>
+</div><!-- end of top -->
+
+<div id="content">
+
+
+
+
+
+<table id="myTable">
+    <form>
+        <label for="reviewer_name" >Your Name:</label><br>
+        <input type="text" id="reviewer_name" name="reviewer_name" required><br>
+        <label for="review_text">Review Description:</label><br>
+        <textarea id="review_text" name="review_text" rows="4" cols="50"></textarea><br>
+        <label for="rating">Rating:</label>
+        <div class="stars" id="star1" onclick="selectStar(1)">&#9734;</div>
+        <div class="stars" id="star2" onclick="selectStar(2)">&#9734;</div>
+        <div class="stars" id="star3" onclick="selectStar(3)">&#9734;</div>
+        <div class="stars" id="star4" onclick="selectStar(4)">&#9734;</div>
+        <div class="stars" id="star5" onclick="selectStar(5)">&#9734;</div>
+        <input type="hidden" id="rating" name="rating"><br>
+        <button type="submit" id="submit">Submit Review</button>
+    </form>
+    <script>
+        function selectStar(n) {
+          // Reset all stars to inactive
+          for (var i = 1; i <= 5; i++) {
+            var star = document.getElementById("star" + i);
+            star.classList.remove("active");
+          }
+          // Set selected stars to active
+          for (var i = 1; i <= n; i++) {
+            var star = document.getElementById("star" + i);
+            star.classList.add("active");
+          }
+          // Set the rating input value
+          var ratingInput = document.getElementById("rating");
+          ratingInput.value = n;
+        }
+      </script>
+</table>
+ </body>
+</html>
+</div> 
+<div id="footer" style="text-align: center;">
+  | <a href="aboutus.html">About Us</a> | <a href="contactus.html">Contact Us</a> | <a href="privacypolicy.html">Privacy Policy</a>  | <a href="events.html">Events</a>  | 
+    <br>
+  © 2023 Cinema Sol. <br> 
+  All rights reserved.<br> 
+  <p style="text-align: center;">All images are property of their respective franchises and movies. </p> 
+
+<div id="sociallinks">
+<!-- Add font awesome icons -->
+<a href="http://www.facebook.com" class="fa fa-facebook-square fa-2x" style="color:#284d4c"></a>
+<a href="http://www.twitter.com" class="fa fa-twitter-square fa-2x" style="color:#284d4c"></a>
+<a href="http://www.instagram.com" class="fa fa-instagram fa-2x" style="color:#284d4c"></a>
+</div>
+
+</div><!-- end of footer -->
+</div><!--end of wrapper-->
+</body>
+</html>

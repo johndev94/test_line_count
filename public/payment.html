@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Cinema Sol</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="payment.js"> </script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+  <script src="nav.js"></script>
+  <meta charset="utf-8">
+
+</head>
+
+<body>
+  <div id="wrapper">
+
+    <div id="nav">
+    </div> <!-- end of nav -->
+
+    <div id="top">
+
+      <img src="images/cinemaLogo.png" alt="Large Cinema Logo" class="center" alt="Cinema Logo">
+      ________________
+      <h2>Payment</h2>
+    </div><!-- end of top -->
+    <div id="content">
+
+      <style>
+        table.GeneratedTable {
+          width: 100%;
+          background-color: #ffffff;
+          border-collapse: collapse;
+          border-width: 2px;
+          border-color: #ffcc00;
+          border-style: solid;
+          color: #000000;
+        }
+
+        table.GeneratedTable td,
+        table.GeneratedTable th {
+          border-width: 2px;
+          border-color: #adadad;
+          border-style: solid;
+          padding: 3px;
+        }
+
+        table.GeneratedTable thead {
+          background-color: #ffcc00;
+        }
+
+        #visa {
+          display: block;
+          margin-left: auto;
+          max-width: 100px;
+          float: right;
+        }
+
+        #cost {
+          color: green;
+        }
+      </style>
+
+      <br>
+      <div class="container" id="container">
+        <!-- Payment -->
+        <div class="form-container payment-container">
+
+          <form action="#">
+            <h1>Pay here</h1>
+
+            Your total is: <p id="cost"></p>
+            <p id="cardNumberRegex" class="red"></p>
+            <input type="text" placeholder="Card Number" id="cardNum"><br>
+            <p id="nameRegex" class="red"></p>
+            <input type="text" placeholder="Name on card" id="cardName"><br>
+            <p id="dateRegex" class="red"></p>
+            <input type="text" placeholder="Expiry date" id="cardDate"><br>
+            <p id="CVCRegex" class="red"></p>
+            <input type="text" placeholder="CVC number" id="cardCVC">
+            <div class="content">
+            </div>
+            <img src="images/visa.png" id="visa"><br>
+            <button id="payment">Proceed with Payment</button>
+          </form>
+        </div>
+      </div>
+
+      <div id="invalid">
+
+      </div>
+    </div>
+
+    <!-- end of content -->
+    <div id="footer" style="text-align: center;">
+      | <a href="aboutus.html">About Us</a> | <a href="contactus.html">Contact Us</a> | <a
+        href="privacypolicy.html">Privacy Policy</a> | <a href="events.html">Events</a> |
+      <br>
+      © 2023 Cinema Sol. <br>
+      All rights reserved.<br>
+      <p style="text-align: center;">All images are property of their respective franchises and movies. </p>
+
+      <div id="sociallinks">
+        <!-- Add font awesome icons -->
+        <a href="http://www.facebook.com" class="fa fa-facebook-square fa-2x" style="color:#284d4c"></a>
+        <a href="http://www.twitter.com" class="fa fa-twitter-square fa-2x" style="color:#284d4c"></a>
+        <a href="http://www.instagram.com" class="fa fa-instagram fa-2x" style="color:#284d4c"></a>
+      </div>
+
+    </div><!-- end of footer -->
+  </div><!--end of wrapper-->
+</body>
+
+</html>
